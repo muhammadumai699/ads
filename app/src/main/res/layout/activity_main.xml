@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="20"
+    android:background="#6E2D19"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/text_field"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:hint="Email"/>
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:drawableTint="#F3ECEC"
+                android:background="@drawable/text_field"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:hint="Password"/>
+
+            <ImageView
+                android:id="@+id/showpass"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:src="@drawable/show"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="-40dp"/>
+
+            <TextView
+                android:id="@+id/forgot_Password"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:text="Forgot Password?"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="@drawable/text_field"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:text="LOGIN"/>
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Create New Account?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/captureScreenShot"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="3">
+                <View
+                    android:id="@+id/rightline"
+                    android:layout_width="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="2dp"
+                    android:background="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/Or"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:text="OR"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/leftline"
+                    android:layout_width="150dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/Google"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/google"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/Facebook"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/Phone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/telephone"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/Twitter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/twitter"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/Github"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/github"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
